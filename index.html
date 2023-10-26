@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">   
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Bluefish</title>
+    <link href="styles.css" rel="stylesheet"> 
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Find Bluefish</h1>
+        <img src="bluefish.png" alt="bluefish" id="headerbluefish">
+        <audio autoplay loop src="watersound.mp3" id="waterSound" type="mp3">
+        Audio not supported.
+        </audio>
+        <audio id="winAudio" src="winsound.mp3" type="mp3"></audio>
+    </header>
+    <main>
+<div class="container"> 
+    <div id="clock">000.000</div>
+    <div class="flex"><h2 id="win">YOU WIN!</h2></div>
+   <img src="goldfam.png" alt="goldfish family" id="fish">
+   <img src="goldfish.png" alt="goldfish" id="fish">
+   <img src="goldgroup.png" alt="goldfish group" id="fish">
+   <img src="bluefish.png" alt="bluefish" id="bluefish">
+    <img src="3catfish.png" alt="3 catfish" id="fish">
+    <img src="3gold.png" alt="3 goldfish" id="fish">
+    <img src="4tuna.png" alt="4 tuna" id="fish" style="animation-duration: 7.5s;">
+    <img src="catfish.png" alt="catfish" id="fish">
+    <img src="lotstuna.png" alt="lots of tuna" id="fish" style="animation-duration: 7.5s;">
+    <img src="marlin.png" alt="marlin" id="fish" style="max-width: 300px; animation-duration: 7.5s;">
+    <img src="tuna.png" alt="tuna" id="fish" style="animation-duration: 7.5s;">
+    <img src="octopus.png" alt="octopus" id="octopus">
+    <div id="circle"></div> 
+<div> <button id="play1" class="playButton">Play</button></div>
+<form id="nameForLeaderboard">
+    <label>Enter Name For Leaderboard</label>
+    <br>
+    <input type="text" id="playerName" name="playerName">
+    <input type="submit" id="submit">
+</form>
+<p id="restartMessage">Click or Tap on the Octopus to restart</p>
+</div>
+<div class="flex">
+<div class="rules"> 
+<summary>
+    <!-- Shown -->
+    <h3>How To Play</h3>
+    <details>
+<!-- Hidden -->
+<ol>
+    <li>Press play to start</li>
+    <li>The game will fade to black</li>
+    <li>Hover anywhere over the black area to reveal whats beneath</li>
+    <li>Find Bluefish as fast as you can!</li>
+    <li><span>Click or Tap</span> on Bluefish to win!</li>
+    <li>Click or Tap on the Octopus to restart</li>
+</ol>
+</details>
+</summary>
+</div>
+<!--Leader Board-->
+<div class="rules">
+    <h3>Leaderboard</h3>
+    <ol id="leaderboard-list">
+    </ol>
+</div>
+</div>
+</main>
+<footer>
+    <h4>About</h4>
+    <p>Hi, i'm Jake. Welcome to my game!
+        <br>I'm teaching myself to code with a current focus on web development.
+        <!--<br>Check out my portfolio <a>here.</a>-->
+    </p>
+<h3>Contact</h3>
+<p>Jacob-May@outlook.com</p>
+</footer>
+
+</body>
+</html>
