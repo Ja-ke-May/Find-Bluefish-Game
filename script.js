@@ -61,7 +61,7 @@ document.addEventListener("touchmove", function (event) {
         let touch = event.touches[0];
         moveCircle(touch.clientX, touch.clientY);
     }
-});
+}, { passive: false });
 
 // Function to calculate the new position of the circle based on the cursor or touch position
 function moveCircle(clientX, clientY) {
