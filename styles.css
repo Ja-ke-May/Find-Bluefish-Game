@@ -26,10 +26,10 @@ h1 {
 }
 @keyframes swimloop {
     from {
-     transform: translateX(100vh); 
+     transform: translateX(200vh); 
     }
     to{
-        transform: translateX(-150vh);
+        transform: translateX(-200vh);
     }
 }
 /* MAIN */
