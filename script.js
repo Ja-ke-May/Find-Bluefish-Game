@@ -1,7 +1,6 @@
 //Find Bluefish game
 // 21/10/23 
 // Made by Jacob May
-// 2 Months learning to code basic game complete
 
 document.addEventListener("DOMContentLoaded", function () {
 
