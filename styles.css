@@ -24,6 +24,12 @@ h1 {
     width: 15%;
     transition: opacity 5s;
 }
+.widthFull{
+    width: 100%;
+    background-size: cover;
+    object-fit: contain;
+    overflow: hidden;
+}
 @keyframes swimloop {
     from {
      transform: translateX(200vh); 
