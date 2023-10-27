@@ -56,12 +56,21 @@ const restartMessage = document.getElementById("restartMessage");
 
 // touchmove event listener
 document.addEventListener("touchmove", function (event) {
-    event.preventDefault();
-    if (followCursor) {
-        let touch = event.touches[0];
-        moveCircle(touch.clientX, touch.clientY);
-    }
-}, { passive: false });
+  if (followCursor) {
+      let touch = event.touches[0];
+      let rect = circle.getBoundingClientRect();
+      let isInCircle = (
+          touch.clientX >= rect.left &&
+          touch.clientX <= rect.right &&
+          touch.clientY >= rect.top &&
+          touch.clientY <= rect.bottom
+      );
+      if (isInCircle) {
+          event.preventDefault(); // Prevent the page from scrolling
+          moveCircle(touch.clientX, touch.clientY), { passive: false }
+      }
+  }
+});
 
 // Function to calculate the new position of the circle based on the cursor or touch position
 function moveCircle(clientX, clientY) {
