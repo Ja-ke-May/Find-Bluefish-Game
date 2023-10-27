@@ -67,10 +67,10 @@ document.addEventListener("touchmove", function (event) {
       );
       if (isInCircle) {
           event.preventDefault(); // Prevent the page from scrolling
-          moveCircle(touch.clientX, touch.clientY), { passive: false }
+          moveCircle(touch.clientX, touch.clientY) 
       }
   }
-});
+}, { passive: false });
 
 // Function to calculate the new position of the circle based on the cursor or touch position
 function moveCircle(clientX, clientY) {
@@ -98,6 +98,10 @@ bluefish.addEventListener("click", function() {
     document.getElementById("nameForLeaderboard").style.visibility = "visible";
     document.getElementById("nameForLeaderboard").style.opacity = 1;
     restartMessage.style.opacity = 1;
+
+    // Reset touch defaults
+  document.removeEventListener("touchmove", touchMoveHandler, { passive: false });
+  document.addEventListener("touchmove", touchMoveHandler, { passive: true });
 })
 
 //header bluefish click and double click to change opacity
