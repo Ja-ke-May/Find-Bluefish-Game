@@ -163,6 +163,7 @@ h3 {
 .rules {
     margin: absolute;
     margin-top: 20px;
+    margin-bottom: 20px;
     background-color: #0099ff;
     width: 50%;
     border-radius: 3% 3% 10% 10%;
