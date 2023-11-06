@@ -143,6 +143,7 @@ button:hover {
     transition: opacity 4s;
     color: white;
     max-width: 50vw;
+    left: 50%;
  }
  form{
     opacity: 1;
@@ -154,6 +155,13 @@ button:hover {
     display: flex;
     align-items: center;
     flex-direction: column;
+ }
+ .flex2{
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
  }
 h3 {
     text-decoration: underline;
